@@ -9,7 +9,7 @@ def validate_float(value, field_name="Value"):
     except (ValueError, TypeError):
         raise TypeError(f"{field_name} must be a float")
     if value < 0:
-        raise ValueError(f"{field_name} must be positive")
+        raise ValueError(f"{field_name} must be positive") 
     return value
 
 def validate_int(value, field_name="Value"):
